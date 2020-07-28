@@ -45,7 +45,7 @@ def send_mail(price, title):
     subject = "Price fell down from " + str(price) + "€! " + title
     body = "Check the amazon link: " + URL
     
-    msg = f'Subject: {subject}\n\n{body}'
+    msg = 'Subject: ' + (subject) + '\n\n' + (body)
     
     # Sending the mail
     server.sendmail(
